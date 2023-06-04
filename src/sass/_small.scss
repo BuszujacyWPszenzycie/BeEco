@@ -1,0 +1,9 @@
+@media (min-width: 576px) {
+	.nav {
+		&__mobile {
+			&-items {
+				width: 400px;
+			}
+		}
+	}
+}

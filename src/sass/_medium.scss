@@ -1,0 +1,13 @@
+@media (min-width: 768px) {
+	.nav {
+		&__mobile {
+			display: none;
+		}
+		&__desktop {
+			display: flex;
+			&-item {
+				font-size: 1.6rem;
+			}
+		}
+	}
+}

@@ -1,0 +1,10 @@
+@media (min-width: 992px) {
+	.nav {
+		&__desktop {
+			display: flex;
+			&-item {
+				font-size: 2rem;
+			}
+		}
+	}
+}
