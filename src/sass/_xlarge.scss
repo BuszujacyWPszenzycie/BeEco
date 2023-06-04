@@ -7,4 +7,22 @@
 			}
 		}
 	}
+	.section {
+		padding-top: 12rem;
+		&__title {
+			font-size: 5rem;
+		}
+	}
+
+	.types {
+		&__item {
+			height: 300px;
+			&-icon {
+				font-size: 8.5rem;
+			}
+			&-title {
+				font-size: 3.5rem;
+			}
+		}
+	}
 }

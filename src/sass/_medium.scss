@@ -10,4 +10,21 @@
 			}
 		}
 	}
+	.section {
+		padding-top: 12rem;
+		&__title {
+			font-size: 4rem;
+		}
+	}
+
+	.types {
+		&__item {
+			&-icon {
+				font-size: 8rem;
+			}
+			&-title {
+				font-size: 3rem;
+			}
+		}
+	}
 }

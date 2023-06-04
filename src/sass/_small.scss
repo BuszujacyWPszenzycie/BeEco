@@ -6,4 +6,16 @@
 			}
 		}
 	}
+
+	.types {
+		&__item {
+			height: 250px;
+			&-icon {
+				font-size: 7.5rem;
+			}
+			&-title {
+				font-size: 2.5rem;
+			}
+		}
+	}
 }
