@@ -14,6 +14,14 @@ const navMobileHamburgerBtn = document.querySelector('.nav__mobile-hamburger')
 const navMobileHamburgerSpan = document.querySelector('.hamburger-inner')
 const navMobileHamburgerBox = document.querySelector('.hamburger-box')
 const allNavMobileItems = document.querySelectorAll('.nav__mobile-item')
+const bntOne = document.querySelector('.types__item')
+const modalOne = document.querySelector('.modal-one')
+
+const showModal = () => {
+	modalOne.classList.add('show-modal')
+}
+
+bntOne.addEventListener('click', showModal)
 
 // Adding shadow to menu NavBar after scrolling down
 

@@ -176,6 +176,7 @@ body {
 
 .types {
 	margin: 3rem;
+	position: relative;
 	// background-color: $light-green;
 	&__box {
 		display: flex;
@@ -226,6 +227,29 @@ body {
 			text-transform: uppercase;
 		}
 	}
+}
+
+.modal {
+	position: absolute;
+	// left: 50%;
+	// top: 50%;
+	// transform: translate(-50%, -50%);
+	transform: translate(-500%);
+	border: 1px solid black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rebeccapurple;
+	width: 300px;
+	height: 300px;
+	transition: transform 0.4s;
+}
+
+.show-modal {
+	// transform: translate(0);
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
 }
 
 @import './small';
