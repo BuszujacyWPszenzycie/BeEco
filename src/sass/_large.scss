@@ -7,4 +7,30 @@
 			}
 		}
 	}
+
+	.contact {
+		&__mail {
+			width: 500px;
+		}
+
+		&__wrapper {
+			&-btn {
+				width: 500px;
+			}
+		}
+
+		&__label {
+			&-file {
+				width: 400px;
+			}
+		}
+
+		&__input {
+			width: 400px;
+		}
+
+		&__btn {
+			width: 150px;
+		}
+	}
 }

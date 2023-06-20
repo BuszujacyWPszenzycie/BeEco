@@ -47,8 +47,40 @@
 
     </nav>
   </header>
+
   <main class="main">
     <div class="wrapper">
+      <section class="section" id="about">
+        <h2 class="section__title">O nas</h2>
+
+        <div class="about__box">
+
+          <div class="about__box-text">
+            <h3 class="about__box-text-h3">Cześć!</h3>
+            <p class="about__box-text-p">Zdarza Ci się że podczas segregacji śmieci nie wiesz gdzie wrzucić dany odpad?
+              Zastanawiasz się, czy przed umieszczeniem odpadu w pojemniku, należałoby go odpowienio przygotować? Być
+              może
+              umyć, lub odzielić części składowe?
+            </p>
+            <p class="about__box-text-p">Mam ten sam problem. Wszyscy chcemy prawidłowo segregować śmieci, natomiast
+              często nie
+              mamy
+              odpowiednich informacji jak to należy zrobić.</p>
+            <p class="about__box-text-p">Dlatego właśnie stworzyłem tę stronę. Ma to być wyszukiwarka, która umożliwi Ci
+              znaleźć
+              poszukiwany odpad, a następnie pokieruje Cię jak należy go posegregować.</p>
+            <p class="about__box-text-p">Stronę buduję samodzielnie, dlatego dziękuję za pomoc w jej rozwijaniu i
+              przepraszam za
+              ewentualne błędy.</p>
+            <p class="about__box-text-p">Bądź <span class="about__box-text-span">Eko!</span></p>
+          </div>
+
+          <img src="./img/about_3.jpg" alt="picture of leaves covered with drops of water" class="about__box-img">
+        </div>
+
+
+      </section>
+
       <section class="section types" id="types">
 
         <h2 class="section__title">Segreguj</h2>
@@ -84,46 +116,112 @@
 
         </div>
 
-        <div class="modal modal-one">
+        <div class="modal modal-one show-modal">
           test
         </div>
-
         <!-- Segregate modals -->
+
+      </section>
+
+      <section class="search" id="search">
+        <h2 class="section__title">Wyszukiwarka</h2>
+        <div class="search__box">
+
+          <h3 class="search__box-h3">Tutaj w przyszłości powstanie wyszukiwarka do segregacji odpadów</h3>
+          <div class="search__box-wrapper">
+
+            <input type="text" class="search__box-input" id="search__box-input">
+            <label for="search__box-input" class="fa-solid fa-magnifying-glass search__box-icon"></label>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <h2 class="section__title">Kontakt</h2>
+
+        <div class="contact__box">
+          <div class="contact__mail">
+
+            <div class="contact__wrapper">
+              <input type="text" class="contact__input" id="mail-title">
+              <label for="mail-title" class="contact__label">Tytuł</label>
+            </div>
+
+            <div class="contact__wrapper">
+              <input type="text" class="contact__input" id="mail">
+              <label for="mail" class="contact__label">Mail</label>
+            </div>
+
+            <div class="contact__wrapper">
+              <textarea name="mail-text" id="mail-text" class="contact__input contact__placeholder"></textarea>
+              <label for="mail-text" class="contact__label">Wiadomość</label>
+            </div>
+
+            <div class="contact__wrapper-file">
+
+              <label for="choose-file" class="contact__label-file">Wybierz plik</label>
+              <input type="file" name="choose-file" id="choose-file" class="contact__input-file" multiple>
+
+            </div>
+
+            <p class="contact__p">Plik dodany</p>
+
+            <div class="contact__wrapper-btn">
+              <button class="contact__btn contact__btn-clear">Wyczyść</button>
+              <button class="contact__btn contact__btn-send">Wyślij</button>
+            </div>
+
+          </div>
+
+          <hr>
+
+          <div class="contact__other">
+
+            <hr>
+
+            <div class="contact__other-item">
+              <i class="fa-solid fa-mobile-screen contact__other-icon"></i>
+              <a href="tel:0048504113065" class="contact__other-a contact__other-a--mobile">
+                <p class="contact__other-p">+48 504 113 065</p>
+              </a>
+            </div>
+
+            <hr>
+
+            <div class="contact__other-item">
+              <i class="fa-solid fa-envelope contact__other-icon"></i>
+              <p class="contact__other-p">marcin.szturminski@gmail.com</p>
+            </div>
+
+            <hr>
+
+            <div class="contact__other-item contact__socialMedia">
+              <a href="" class="contact__other-a"><i
+                  class="fa-brands fa-facebook-f contact__other-icon contact__other-icon--social"></i></a>
+              <a href="" class="contact__other-a"><i
+                  class="fa-brands fa-twitter contact__other-icon contact__other-icon--social"></i></a>
+              <a href="" class="contact__other-a"><i
+                  class="fa-brands fa-instagram contact__other-icon contact__other-icon--social"></i></a>
+            </div>
+
+
+          </div>
+        </div>
 
       </section>
     </div>
   </main>
 
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
+  <footer class="footer">
+    <p class="copyright"><strong>&copy;</strong> BuszujacyWPszenzycie |
+      <strong>MadeBy:</strong> Marcin
+      Szturminski | <strong>Icons:</strong>
+      <a href="https://fontawesome.com/" class="footer__a">FontAwsome</a>
+      <strong>Pictures:</strong> <a href="https://pixabay.com/pl/" class="footer__a">Pixabay.com</a>
+
+  </footer>
+
 
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -131,39 +229,3 @@
 </body>
 
 </html>
-<!-- 
-<div class="types__item">
-  <h2 class="types__item-title"><i class="fa-solid fa-trash types__item-icon"></i>Tworzywa sztuczne</h2>
-  <div class="types__item-box">
-    <div class="types__item-box-yes">
-      <ul class="types__item-box-ul">
-        <li class="types__item-box-li"><i class="fa-solid fa-check"></i>odkręcone i zgniecione plastikowe
-          butelki po napojach</li>
-        <li class="types__item-box-li">nakrętki, o ile nie zbieramy ich osobno w ramach akcji dobroczynnych</li>
-        <li class="types__item-box-li">plastikowe opakowania po produktach spożywczych</li>
-        <li class="types__item-box-li">opakowania wielomateriałowe (np. kartony po mleku i sokach)</li>
-        <li class="types__item-box-li">opakowania po środkach czystości (np. proszkach do prania), kosmetykach
-          (np. szamponach, paście do zębów) itp.
-        </li>
-        <li class="types__item-box-li">plastikowe torby, worki, reklamówki, inne folie</li>
-        <li class="types__item-box-li">aluminiowe puszki po napojach i sokach</li>
-        <li class="types__item-box-li">puszki po konserwach</li>
-        <li class="types__item-box-li">folię aluminiową</li>
-        <li class="types__item-box-li">metale kolorowe</li>
-        <li class="types__item-box-li">kapsle, zakrętki od słoików</li>
-      </ul>
-    </div>
-    <div class="types__item-box-no">
-      <ul class="types__item-box-ul">
-        <li class="types__item-box-li"><i class="fa-solid fa-ban"></i>butelek i pojemników z zawartością</li>
-        <li class="types__item-box-li">plastikowych zabawek</li>
-        <li class="types__item-box-li">opakowań po lekach i zużytych artykułów medycznych</li>
-        <li class="types__item-box-li">opakowań po olejach silnikowych</li>
-        <li class="types__item-box-li">części samochodowych</li>
-        <li class="types__item-box-li">zużytych baterii i akumulatorów</li>
-        <li class="types__item-box-li">puszek i pojemników po farbach i lakierach</li>
-        <li class="types__item-box-li">zużytego sprzętu elektronicznego i AGD</li>
-      </ul>
-    </div>
-  </div>
-</div> -->

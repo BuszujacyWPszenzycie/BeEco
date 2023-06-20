@@ -27,4 +27,19 @@
 			}
 		}
 	}
+
+	.about {
+		&__box {
+			&-img {
+				display: block;
+			}
+		}
+	}
+
+	.contact {
+		&__box {
+			justify-content: center;
+			flex-direction: row;
+		}
+	}
 }
