@@ -21,6 +21,55 @@ const chooseFileLabel = document.querySelector('.contact__label-file')
 const chooseFileInput = document.querySelector('.contact__input-file')
 const contactP = document.querySelector('.contact__p')
 const allBtns = document.querySelectorAll('.contact__btn')
+const body = document.querySelector('body')
+
+const typeTrashBtn = document.querySelectorAll('.types__item')
+const typeIcons = document.querySelectorAll('.types__item-icon')
+const allModals = document.querySelectorAll('.modal')
+
+// console.log(typeTrahsBtn)
+console.log(allModals)
+console.log(typeIcons)
+
+// showing modals with segregation info
+
+// const showModal = e => {
+// 	console.log('test')
+// 	console.log(e.target)
+// 	switch (e.target) {
+// 		case typeTrashBtn[0]:
+// 			allModals[0].classList.add('show-modal')
+// 			console.log('first')
+// 			break
+// 		case typeTrashBtn[1]:
+// 			allModals[1].classList.add('show-modal')
+// 			console.log('second')
+// 			break
+// 		case typeIcons[0]:
+// 			allModals[0].classList.add('show-modal')
+// 			break
+// 	}
+// }
+
+const showModalIf = e => {
+	body.classList.add('blur')
+	if (e.target === typeTrashBtn[0] || typeTrashBtn[0].contains(e.target)) {
+		allModals[0].classList.add('show-modal')
+		allModals[0].classList.remove('blur')
+	} else if (e.target === typeTrashBtn[1] || typeTrashBtn[1].contains(e.target)) {
+		allModals[1].classList.add('show-modal')
+	} else if (e.target === typeTrashBtn[2] || typeTrashBtn[2].contains(e.target)) {
+		allModals[2].classList.add('show-modal')
+	} else if (e.target === typeTrashBtn[3] || typeTrashBtn[3].contains(e.target)) {
+		allModals[3].classList.add('show-modal')
+	} else if (e.target === typeTrashBtn[4] || typeTrashBtn[4].contains(e.target)) {
+		allModals[4].classList.add('show-modal')
+	}
+}
+
+typeTrashBtn.forEach(type => {
+	type.addEventListener('click', showModalIf)
+})
 
 // Check if all inputs are not empty
 
@@ -98,14 +147,6 @@ const removeFocusFile = () => {
 // 		item.nextElementSibling.classList.remove('show-label')
 // 	})
 // })
-
-// Modal for section - segregate - NOT FINISHED
-
-const showModal = () => {
-	modalOne.classList.add('show-modal')
-}
-
-bntOne.addEventListener('click', showModal)
 
 // Adding shadow to menu NavBar after scrolling down
 
