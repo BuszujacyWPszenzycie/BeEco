@@ -22,40 +22,47 @@ const chooseFileInput = document.querySelector('.contact__input-file')
 const contactP = document.querySelector('.contact__p')
 const allBtns = document.querySelectorAll('.contact__btn')
 const body = document.querySelector('body')
-
+const allSections = document.querySelectorAll('.section')
+const header = document.querySelector('.header')
+const allTitles = document.querySelectorAll('.section__title')
 const typeTrashBtn = document.querySelectorAll('.types__item')
 const typeIcons = document.querySelectorAll('.types__item-icon')
 const allModals = document.querySelectorAll('.modal')
+const allCloseBtn = document.querySelectorAll('.modal__btn')
 
-// console.log(typeTrahsBtn)
-console.log(allModals)
-console.log(typeIcons)
+console.log(allCloseBtn)
+
+// Close modal
+
+const closeModal = () => {
+	console.log('test')
+	allSections.forEach(section => {
+		section.classList.remove('blur')
+	})
+	allTitles.forEach(title => {
+		title.classList.remove('blur')
+	})
+	allModals.forEach(modal => {
+		modal.classList.remove('show-modal')
+	})
+
+	typeTrashBtn.forEach(type => {
+		type.classList.remove('blur')
+	})
+
+	header.classList.remove('blur')
+}
+
+allCloseBtn.forEach(btn => {
+	btn.addEventListener('click', closeModal)
+})
 
 // showing modals with segregation info
 
-// const showModal = e => {
-// 	console.log('test')
-// 	console.log(e.target)
-// 	switch (e.target) {
-// 		case typeTrashBtn[0]:
-// 			allModals[0].classList.add('show-modal')
-// 			console.log('first')
-// 			break
-// 		case typeTrashBtn[1]:
-// 			allModals[1].classList.add('show-modal')
-// 			console.log('second')
-// 			break
-// 		case typeIcons[0]:
-// 			allModals[0].classList.add('show-modal')
-// 			break
-// 	}
-// }
-
 const showModalIf = e => {
-	body.classList.add('blur')
+	console.log('test')
 	if (e.target === typeTrashBtn[0] || typeTrashBtn[0].contains(e.target)) {
 		allModals[0].classList.add('show-modal')
-		allModals[0].classList.remove('blur')
 	} else if (e.target === typeTrashBtn[1] || typeTrashBtn[1].contains(e.target)) {
 		allModals[1].classList.add('show-modal')
 	} else if (e.target === typeTrashBtn[2] || typeTrashBtn[2].contains(e.target)) {
@@ -67,8 +74,24 @@ const showModalIf = e => {
 	}
 }
 
+const addBlur = () => {
+	header.classList.add('blur')
+	typeTrashBtn.forEach(type => {
+		type.classList.add('blur')
+	})
+	allTitles[1].classList.add('blur')
+	for (let i = 0; i <= allSections.length; i++) {
+		if (i != 1) {
+			allSections[i].classList.add('blur')
+		} else {
+			allSections[i].classList.remove('blur')
+		}
+	}
+}
+
 typeTrashBtn.forEach(type => {
 	type.addEventListener('click', showModalIf)
+	type.addEventListener('click', addBlur)
 })
 
 // Check if all inputs are not empty
