@@ -25,4 +25,24 @@
 			}
 		}
 	}
+
+	.modal {
+		width: 1000px;
+		font-size: 1.8rem;
+		flex-direction: row;
+		align-items: flex-start;
+		&__box {
+			width: 500px;
+
+			&-list {
+				&--no {
+					padding-bottom: 5rem;
+				}
+			}
+		}
+
+		&__btn {
+			font-size: 5rem;
+		}
+	}
 }

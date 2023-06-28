@@ -33,4 +33,22 @@
 			}
 		}
 	}
+
+	.modal {
+		width: 400px;
+		font-size: 1.5rem;
+		&__box {
+			width: 400px;
+
+			&-list {
+				&--no {
+					padding-bottom: 5rem;
+				}
+			}
+		}
+
+		&__btn {
+			font-size: 3.5rem;
+		}
+	}
 }

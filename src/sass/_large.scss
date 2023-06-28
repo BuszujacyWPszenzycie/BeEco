@@ -33,4 +33,24 @@
 			width: 150px;
 		}
 	}
+
+	.modal {
+		width: 800px;
+		font-size: 1.6rem;
+		flex-direction: row;
+		align-items: flex-start;
+		&__box {
+			width: 400px;
+
+			&-list {
+				&--no {
+					padding-bottom: 5rem;
+				}
+			}
+		}
+
+		&__btn {
+			font-size: 4rem;
+		}
+	}
 }
