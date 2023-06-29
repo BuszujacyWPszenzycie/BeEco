@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wyszukaj odpad</title>
+  <!-- @include 'styles.kit' -->
+  <link rel="stylesheet" href="./dist/css/search.min.css">
+</head>
+
+<body>
+
+  <header class="header">
+
+    <div class="header__box">
+      <div class="header__box-shadow"></div>
+      <input type="text" class="header__box-input" placeholder="Wyszukaj odpowiedni odpad">
+    </div>
+
+  </header>
+
+  <section class="search">
+    <h2 class="search__title">Lista odpadów</h2>
+    <ol class="search__list">
+      <li class="search__list-item">Butelka plastikowa -- Tworzywa sztuczne<i
+          class="fa-solid fa-bottle-water search__icon search__icon--plastic"></i></li>
+      <li class="search__list-item">Butelka szklana -- Szkło<i
+          class="fa-solid fa-wine-bottle search__icon search__icon--glass"></i></li>
+      <li class="search__list-item">Gazeta -- Papier<i
+          class="fa-solid fa-newspaper search__icon search__icon--paper"></i></li>
+      <li class="search__list-item">Paragon -- Zmieszane<i
+          class="fa-solid fa-recycle search__icon search__icon--mixed"></i></li>
+      <li class="search__list-item">Zgniłe owoce -- Bio<i
+          class="fa-solid fa-seedling search__icon search__icon--bio"></i></li>
+    </ol>
+  </section>
+  <script src="./dist/js/search.min.js"></script>
+</body>
+
+</html>

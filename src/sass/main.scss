@@ -416,6 +416,26 @@ body {
 			}
 		}
 	}
+
+	&__btn {
+		margin-top: 3rem;
+		// padding-left: 45px;
+		border: none;
+		background-color: $dark-green;
+		border-radius: 16px;
+		width: 300px;
+		height: 60px;
+		font-size: 2rem;
+		color: $white;
+		box-shadow: 8px 8px 63px -12px rgba(31, 138, 112, 0.5);
+		transition: background 0.4s;
+		font-family: 'Montserrat', sans-serif;
+		cursor: pointer;
+
+		&:hover {
+			background: $focus-dark-green;
+		}
+	}
 }
 
 // CONTACT
